@@ -35,4 +35,4 @@ function filter_undefined(input: (number | undefined)[]): asserts input is numbe
 
 filter_undefined(array);
 
-array
+export default {}

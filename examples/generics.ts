@@ -91,6 +91,12 @@ interface MyNode<T> {
     next?: MyNode<T>
 }
 
+type Person = {
+    name: string,
+    age: number
+}
+
+
 declare const string_list: List<string>
 declare const number_list: List<number>
 declare const person_list: List<Person>
@@ -132,3 +138,5 @@ let stefans_name = selectDeep({
         age: 40
     }
 }, "person", "name") // string
+
+export default {}

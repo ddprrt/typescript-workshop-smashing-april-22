@@ -120,3 +120,4 @@ function do_something_with_f1080(inp: F1080p) {
 
 do_something_with_f1080(other_format)
 
+export default {}

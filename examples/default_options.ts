@@ -14,7 +14,7 @@ function copy(options: Partial<Options>) {
 
 copy({ dest: "./dist" })
 
-class COptions {
+export class COptions {
     options: typeof defaultOptionsForAClass
     
     constructor(params: Partial<COptions["options"]>) {
@@ -30,4 +30,4 @@ const defaultOptionsForAClass = {
 
 new COptions({ dest: "./" })
 
-type Remove<T, K extends keyof T> = Omit<T, K>
+export default {}

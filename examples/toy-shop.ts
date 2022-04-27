@@ -1,3 +1,5 @@
+import type { GetKind } from "./conditional-helpers"
+
 type ToyBase = {
     name: string,
     price: number,
@@ -39,6 +41,10 @@ type ToyKind = Toy["kind"] // Index Access Type
 
 type GroupedToys = {
     [Prop in ToyKind]: Toy[] // Mapped Object Types
+}
+
+type AnotherGroupedToys = {
+    [Prop in ToyKind]: GetKind<Toy, Prop>[]
 }
 
 const puzzle: Puzzle = {
@@ -110,3 +116,4 @@ type Union = A | A_2
 
 type Intersection = A & A_2
 
+export default {}
